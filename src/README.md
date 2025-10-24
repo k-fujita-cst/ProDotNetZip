@@ -26,6 +26,9 @@ Namespace was left untouched as `Ionic.Zip`.
 
 ## Versions
 
+### 1.20.1
+  - set dependency of System.Security.Permissions and System.Text.Encoding.CodePages to [8.0.0, 9.0.0)
+    
 ### 1.20.0
   - revert dependency of System.Security.Permissions and System.Text.Encoding.CodePages to v8.0.0
 
