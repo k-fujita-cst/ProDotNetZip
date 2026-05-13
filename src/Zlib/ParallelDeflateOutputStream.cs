@@ -692,7 +692,9 @@ namespace Ionic.Zlib
         {
             if (_isClosed)
                 throw new InvalidOperationException();
-
+            
+            if (_pool == null) return;
+            
             if (emitting) return;
 
             // compress any partial buffer
@@ -792,8 +794,8 @@ namespace Ionic.Zlib
         new public void Dispose()
         {
             TraceOutput(TraceBits.Lifecycle, "Dispose  {0:X8}", this.GetHashCode());
-            _pool = null;
             Dispose(true);
+            _pool = null;
         }
 
 
