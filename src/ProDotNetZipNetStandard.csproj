@@ -13,11 +13,11 @@
 
 		<PackageIcon>dotnetzip.png</PackageIcon>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
-		<PackageProjectUrl>https://github.com/mihula/ProDotNetZip</PackageProjectUrl>
+		<PackageProjectUrl>https://github.com/k-fujita-cst/ProDotNetZip</PackageProjectUrl>
 		<PackageTags>zip, unzip, zlib, bzip2, compress, compression, archive, winzip, aes</PackageTags>
 		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
 
-		<RepositoryUrl>https://github.com/mihula/ProDotNetZip.git</RepositoryUrl>
+		<RepositoryUrl>https://github.com/k-fujita-cst/ProDotNetZip.git</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
 	</PropertyGroup>
 
@@ -34,12 +34,12 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="System.Security.Permissions" Version="[8.0.0,9.0.0)" />
-		<PackageReference Include="System.Text.Encoding.CodePages" Version="[8.0.0,9.0.0)" />
+		<PackageReference Include="System.Security.Permissions" Version="[8.0.0,10.0.8]" />
+		<PackageReference Include="System.Text.Encoding.CodePages" Version="[8.0.0,10.0.8]" />
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="DotNet.ReproducibleBuilds" Version="1.2.25">
+		<PackageReference Include="DotNet.ReproducibleBuilds" Version="2.0.2">
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
 		</PackageReference>
