@@ -2,8 +2,8 @@
 
 	<PropertyGroup>
 		<TargetFramework>netstandard2.0</TargetFramework>
-		<AssemblyName>ProDotNetZip</AssemblyName>
-		<Id>ProDotNetZip</Id>
+		<AssemblyName>ProDotNetZipJ</AssemblyName>
+		<Id>ProDotNetZipJ</Id>
 		<RootNamespace>Ionic.Zip</RootNamespace>
 		<OutputType>Library</OutputType>
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>

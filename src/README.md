@@ -26,6 +26,15 @@ Namespace was left untouched as `Ionic.Zip`.
 
 ## Versions
 
+### 1.20.2
+  - Fix: Prevent NullReferenceException in ParallelDeflateOutputStream.Dispose(). The method previously cleared _pool before calling Dispose(true).
+  Dispose(true) calls InnerClose() → _Flush(true), and _Flush accesses _pool[_currentlyFilling], which caused a NullReferenceException when _pool was already null.
+  The order was changed so that Dispose(true) is invoked first and _pool is cleared afterwards.
+  - set dependency of System.Security.Permissions and System.Text.Encoding.CodePages to [10.0.0, 10.0.8)
+  - update DotNet.ReproducibleBuilds v2.0.2
+  - update System.Security.Permissions v10.0.0
+  - update System.Text.Encoding.CodePages to v10.0.0
+
 ### 1.20.1
   - set dependency of System.Security.Permissions and System.Text.Encoding.CodePages to [8.0.0, 9.0.0)
     
