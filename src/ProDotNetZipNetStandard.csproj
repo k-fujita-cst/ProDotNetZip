@@ -28,7 +28,7 @@
 
 	<PropertyGroup>
 		<DefineConstants>AESCRYPTO;BZIP</DefineConstants>
-		<SignAssembly>true</SignAssembly>
+		<SignAssembly>False</SignAssembly>
 		<AssemblyOriginatorKeyFile>Ionic.snk</AssemblyOriginatorKeyFile>
 		<DelaySign>false</DelaySign>
 	</PropertyGroup>
